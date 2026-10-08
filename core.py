@@ -15,7 +15,7 @@ redis_client=redis.Redis.from_url(os.getenv("REDIS_URL"),decode_responses=True)
 from sqlalchemy import  DateTime, String, Float, Column, Integer, func,Text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
-engine = create_async_engine(os.getenv("DBURL"),echo=True,max_overflow=5)
+engine = create_async_engine(url=os.getenv("DBURL"),echo=True,max_overflow=5)
 session_factory = async_sessionmaker(bind=engine,class_=AsyncSession,expire_on_commit=False,autoflush=True)
 from pydantic import BaseModel, Field, ValidationError
 from sqlalchemy import DateTime, String, Float, Column, Integer, func, Text, BIGINT
