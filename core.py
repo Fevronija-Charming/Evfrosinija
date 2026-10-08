@@ -1,22 +1,12 @@
-from idlelib.configdialog import font_sample_text
-from operator import truediv
-from typing import Union
+import tkinter as tk
 import flet as flet
 import asyncio
 #ШИФРОВАНИЕ ПАРОЛЕЙ
 import bcrypt
-import uuid
-import time
 import time
 import datetime
-from click import password_option
-from flet import BoxFit
-from flet.controls import page
-from numpy.ma.core import shape
-from openpyxl.styles.alignment import horizontal_alignments, vertical_aligments
 import os
 from dotenv import find_dotenv, load_dotenv
-from pydantic_core.core_schema import with_info_wrap_validator_function
 load_dotenv(find_dotenv())
 from faststream.rabbit import RabbitBroker
 broker=RabbitBroker(url=os.getenv("CLOUDAMQP_URL"))
