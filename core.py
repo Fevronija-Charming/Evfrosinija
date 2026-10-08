@@ -231,7 +231,7 @@ async def main(page:flet.Page):
     page.theme = flet.Theme(font_family="Ponomar")
     page.title = "Добавить платок"
     page.theme_mode = flet.ThemeMode.LIGHT
-    page.resizable = False
+    page.resizable = True
     page.vertical_alignment = flet.MainAxisAlignment.CENTER
     page.horizontal_alignment = flet.CrossAxisAlignment.CENTER
     def pustyshka(e):
