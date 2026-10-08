@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker core:app
+web: flet run --web --port $PORT core.py
