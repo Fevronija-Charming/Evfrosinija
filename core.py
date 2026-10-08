@@ -1641,6 +1641,6 @@ async def main(page:flet.Page):
         # scroll=flet.ScrollMode.AUTO
         content_pirog_5=flet.Stack([image_side_4,form_container_20])
 if __name__ == "__main__":
-    flet.app(target=main)
+    flet.app(target=main,view=flet.AppView.WEB_BROWSER)
 
          #view=flet.AppView.WEB_BROWSER
