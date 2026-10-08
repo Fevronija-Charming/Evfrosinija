@@ -1,4 +1,3 @@
-import tkinter as tk
 import flet as flet
 import asyncio
 #ШИФРОВАНИЕ ПАРОЛЕЙ
