@@ -226,8 +226,7 @@ async def main(page:flet.Page):
     # await vstavka_polzovateley()
     # redis_client.flushall()
     page.fonts = {"Ponomar": "Fedorovsk-Regular.ttf"}
-    page.width = 600
-    page.height = 1000
+    page.window.full_screen=True
     page.theme = flet.Theme(font_family="Ponomar")
     page.title = "Добавить платок"
     page.theme_mode = flet.ThemeMode.LIGHT
