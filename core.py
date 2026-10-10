@@ -247,7 +247,7 @@ async def main(page:flet.Page):
 
     form_container_20 = flet.Container(width=280, height=400, top=400, left=20,
                                        content=flet.Column([knopka_oshibka_popytok], ))
-    content_pirog_5 = flet.Stack([image_side_4, form_container_20])
+    content_pirog_5 = flet.Stack([image_side_4, form_container_20],expand=True)
     blokirovka_raboty= await proverka_blokirovka()
     if blokirovka_raboty==1:
         page.add(flet.Column([content_pirog_5],))
@@ -390,7 +390,7 @@ async def main(page:flet.Page):
         #form_container_24 = flet.Container(width=280, height=400, top=600, left=10,
                                            #content=flet.Column([knopka_tenban_4], ))
         content_pirog_6 = flet.Stack([image_side_5, form_container_21,form_container_22,form_container_23,#form_container_24
-                                      ])
+                                      ],expand=True)
         async def platok_otrisovka(e):
             page.clean()
             page.add(flet.Column([  # image_side,
@@ -1344,24 +1344,24 @@ async def main(page:flet.Page):
                                                            kolorit_5_vvod,
                                                            uzor_temeni_vvod, uzor_sedceviny_vvod, uzor_storon_vvod,
                                                            uzor_uglov_vvod, uzor_kraja_vvod,
-                                                           ], ))
+                                                           ], ),expand=True)
         form_container_2 = flet.Container(width=280, height=575, top=102, left=495, content=flet.Column([
         cvety_ornament_vvod, cvetok_1_vvod, cvetok_2_vvod, cvetok_3_vvod, cvetok_4_vvod, cvetok_5_vvod,
         platok_razmer_vvod,
         platok_material_vvod, platok_bahroma_vvod], ))
         form_container_3 = flet.Container(width=280, height=600, top=705, left=495, content=flet.Column([otpravka_knopka], ))
         form_container_4 = flet.Container(width=280, height=50, top=45, left=495,
-                                      content=flet.Column([otpravka_knopka_fail], ))
+                                      content=flet.Column([otpravka_knopka_fail], ),expand=True)
         form_container_5 = flet.Container(width=280, height=50, top=45, left=495,
-                                      content=flet.Column([otpravka_knopka_success], ))
+                                      content=flet.Column([otpravka_knopka_success], ),expand=True)
         form_container_6 = flet.Container(width=280, height=50, top=45, left=495,
-                                      content=flet.Column([otpravka_knopka_DBfail], ))
+                                      content=flet.Column([otpravka_knopka_DBfail], ),expand=True)
         form_container_7 = flet.Container(width=280, height=50, top=45, left=495,
-                                      content=flet.Column([otpravka_knopka_artoccup], ))
+                                      content=flet.Column([otpravka_knopka_artoccup], ),expand=True)
         form_container_8 = flet.Container(width=280, height=50, top=45, left=495,
-                                      content=flet.Column([otpravka_knopka_nameoccup], ))
+                                      content=flet.Column([otpravka_knopka_nameoccup], ),expand=True)
         form_container_9 = flet.Container(width=280, height=50, top=45, left=495,
-                                      content=flet.Column([otpravka_knopka_DBsuccess], ))
+                                      content=flet.Column([otpravka_knopka_DBsuccess], ),expand=True)
         form_container_10 = flet.Container(width=500, height=900, top=10, left=175,
                                       content=flet.Column([flet.Text("Плановая публикация", color=cvet_1, size=28,
                                                                      weight=flet.FontWeight.BOLD,
@@ -1373,62 +1373,62 @@ async def main(page:flet.Page):
                                                            foto_publikacii_2, foto_publikacii_3, foto_publikacii_4,
                                                            foto_publikacii_5, material_publikacii,
                                                            ssylka_publikacii
-                                                           ], ))
+                                                           ], ),expand=True)
         form_container_11 = flet.Container(width=700, height=900, top=100, left=490,
-                                       content=flet.Column([tekst_publikacii], ))
+                                       content=flet.Column([tekst_publikacii], ),expand=True)
         form_container_12 = flet.Container(width=280, height=50, top=45, left=495,
-                                      content=flet.Column([otpravka_knopka_DBsuccess], ))
+                                      content=flet.Column([otpravka_knopka_DBsuccess], ),expand=True)
         form_container_13 = flet.Container(width=280, height=50, top=620, left=495,
-                                      content=flet.Column([publikacija_otpravka_knopka], ))
+                                      content=flet.Column([publikacija_otpravka_knopka], ),expand=True)
         form_container_14 = flet.Container(width=280, height=50, top=691, left=495,
-                                       content=flet.Column([knopka_publikacija_glavnaja], ))
+                                       content=flet.Column([knopka_publikacija_glavnaja], ),expand=True)
         form_container_15 = flet.Container(width=280, height=50, top=772, left=495,
-                                       content=flet.Column([knopka_platok_glavnaja], ))
+                                       content=flet.Column([knopka_platok_glavnaja], ),expand=True)
         #ОБОРАЧИВАНИЕ КНОПОК В КОНТЕЙНЕР
         form_container_16 = flet.Container(width=280, height=400, top=125, left=15,
-                                       content=flet.Column([knopka_glavnaja_platok], ))
+                                       content=flet.Column([knopka_glavnaja_platok], ),expand=True)
         container_knopka_bazzadannyh_PR=flet.Container(width=280, height=400, top=125, left=15,
-                                       content=flet.Column([knopka_glavnaja_bazadannyh_prod], ))
+                                       content=flet.Column([knopka_glavnaja_bazadannyh_prod], ),expand=True)
         container_knopka_bazzadannyh_TH = flet.Container(width=280, height=400, top=125, left=15,
-                                                         content=flet.Column([knopka_glavnaja_bazadannyh_teh], ))
+                                                         content=flet.Column([knopka_glavnaja_bazadannyh_teh], ),expand=True)
         container_knopka_bazzadannyh_MK = flet.Container(width=280, height=400, top=125, left=15,
-                                                         content=flet.Column([knopka_glavnaja_bazadannyh_market], ))
+                                                         content=flet.Column([knopka_glavnaja_bazadannyh_market], ),expand=True)
         form_container_17 = flet.Container(width=280, height=400, top=225, left=15,
-                                       content=flet.Column([knopka_glavnaja_publikacija], ))
+                                       content=flet.Column([knopka_glavnaja_publikacija], ),expand=True)
         form_container_18 = flet.Container(width=280, height=400, top=325, left=15,
-                                       content=flet.Column([knopka_glavnaja_bazadannyh], ))
+                                       content=flet.Column([knopka_glavnaja_bazadannyh], ),expand=True)
         form_container_24 = flet.Container(width=280, height=400, top=425, left=15,
-                                           content=flet.Column([knopka_zurnal_posezhenija], ))
+                                           content=flet.Column([knopka_zurnal_posezhenija], ),expand=True)
         container_knopka_zurnalpos_PR=flet.Container(width=280, height=400, top=225, left=15,
-                                       content=flet.Column([knopka_zurnal_posezhenija_prod], ))
+                                       content=flet.Column([knopka_zurnal_posezhenija_prod], ),expand=True)
         container_knopka_zurnalpos_TH = flet.Container(width=280, height=400, top=225, left=15,
-                                                       content=flet.Column([knopka_zurnal_posezhenija_teh], ))
+                                                       content=flet.Column([knopka_zurnal_posezhenija_teh], ),expand=True)
         container_knopka_zurnalpos_MK = flet.Container(width=280, height=400, top=225, left=15,
-                                                       content=flet.Column([knopka_zurnal_posezhenija_market], ))
+                                                       content=flet.Column([knopka_zurnal_posezhenija_market], ),expand=True)
         form_container_25 = flet.Container(width=280, height=400, top=525, left=15,
-                                           content=flet.Column([knopka_kniga_posezhenija], ))
+                                           content=flet.Column([knopka_kniga_posezhenija], ),expand=True)
         container_kniga_posezhenija_PR = flet.Container(width=280, height=400, top=325, left=15,
-                                                       content=flet.Column([knopka_kniga_posezhenija_prod], ))
+                                                       content=flet.Column([knopka_kniga_posezhenija_prod], ),expand=True)
         container_kniga_posezhenija_TH = flet.Container(width=280, height=400, top=325, left=15,
-                                                        content=flet.Column([knopka_kniga_posezhenija_teh], ))
+                                                        content=flet.Column([knopka_kniga_posezhenija_teh], ),expand=True)
         container_kniga_posezhenija_MK = flet.Container(width=280, height=400, top=325, left=15,
-                                                        content=flet.Column([knopka_kniga_posezhenija_market], ))
+                                                        content=flet.Column([knopka_kniga_posezhenija_market], ),expand=True)
         form_container_26 = flet.Container(width=280, height=400, top=625, left=15,
-                                           content=flet.Column([knopka_vyhod], ))
+                                           content=flet.Column([knopka_vyhod], ),expand=True)
         form_container_27 = flet.Container(width=280, height=400, top=175, left=15,
-                                           content=flet.Column([knopka_prozhanije_1], ))
+                                           content=flet.Column([knopka_prozhanije_1], ),expand=True)
         form_container_28 = flet.Container(width=280, height=400, top=275, left=15,
-                                           content=flet.Column([knopka_prozhanije_2], ))
+                                           content=flet.Column([knopka_prozhanije_2], ),expand=True)
         form_container_29 = flet.Container(width=280, height=400, top=375, left=15,
-                                           content=flet.Column([knopka_prozhanije_3], ))
+                                           content=flet.Column([knopka_prozhanije_3], ),expand=True)
         form_container_33 = flet.Container(width=280, height=400, top=475, left=15,
-                                           content=flet.Column([knopka_prozhanije_4], ))
+                                           content=flet.Column([knopka_prozhanije_4], ),expand=True)
         form_container_30 = flet.Container(width=280, height=400, top=500, left=15,
-                                           content=flet.Column([knopka_vyhod], ))
+                                           content=flet.Column([knopka_vyhod], ),expand=True)
         form_container_31 = flet.Container(width=280, height=400, top=400, left=15,
-                                           content=flet.Column([knopka_glavnaja_publikacija], ))
+                                           content=flet.Column([knopka_glavnaja_publikacija], ),expand=True)
         form_container_32 = flet.Container(width=280, height=400, top=400, left=15,
-                                           content=flet.Column([knopka_glavnaja_publikacija], ))
+                                           content=flet.Column([knopka_glavnaja_publikacija], ),expand=True)
 
 
         uved=flet.SnackBar(flet.Text("Ввести новый платок", color=cvet_1, size=28,
@@ -1571,32 +1571,32 @@ async def main(page:flet.Page):
         content_pirog=flet.Stack([image_side,form_container_1,form_container_2,form_container_3,
                               form_container_4,form_container_5,form_container_6,form_container_7,form_container_8,form_container_9,form_container_15
                               #uved_kont
-                              ])
+                              ],expand=True)
         content_pirog_3=flet.Stack([image_side_3,form_container_10,form_container_11,form_container_13,form_container_4,form_container_5,
                                 form_container_12,form_container_9,form_container_6,form_container_14
-                                ])
+                                ],expand=True)
         content_pirog_2 = flet.Stack([image_side_2,form_container_16,form_container_17,form_container_18,form_container_24, form_container_25,form_container_26
                                 # uved_kont
-                                ])
+                                ],expand=True)
         #content_pirog_4 = flet.Stack([form_container_14,table_container
         #                           ])
         content_pirog_9 = flet.Stack(
             [image_side_6, form_container_27, form_container_28, form_container_29,form_container_33
-             ])
+             ],expand=True)
         content_pirog_10 = flet.Stack(
             [image_side_7, form_container_30, form_container_31
-             ])
+             ],expand=True)
         content_prodavec = flet.Stack(
             [image_side_7, container_kniga_posezhenija_PR,container_knopka_bazzadannyh_PR,container_knopka_zurnalpos_PR
-             ])
+             ],expand=True)
         content_tehnik = flet.Stack(
             [image_side_8, container_kniga_posezhenija_TH, container_knopka_bazzadannyh_TH,
              container_knopka_zurnalpos_TH
-             ])
+             ],expand=True)
         content_market = flet.Stack(
             [image_side_7, container_kniga_posezhenija_MK, container_knopka_bazzadannyh_MK,
              container_knopka_zurnalpos_MK
-             ])
+             ],expand=True)
         knopka_vhod = flet.FilledButton("ВОЙТИ", width=200, height=40,
                                                    on_click=validate_user,
                                                    disabled=True, visible=True,
@@ -1608,7 +1608,7 @@ async def main(page:flet.Page):
                                     style=flet.ButtonStyle(color=flet.Colors.WHITE,
                                                            bgcolor=flet.Colors.RED_500))
         form_container_19 = flet.Container(width=335, height=50, top=570, left=0,
-                                       content=flet.Column([knopka_oshibki_vhoda], ))
+                                       content=flet.Column([knopka_oshibki_vhoda], ),expand=True)
         #page.add(flet.Column([#image_side,
         #data_table,
         #form_side
@@ -1625,10 +1625,10 @@ async def main(page:flet.Page):
                                                  horizontal_alignment=flet.CrossAxisAlignment.CENTER
         ))
         image_side_0=flet.Image(src=f"gamajun.jpg", width=360, height=800)
-        content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19])
+        content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19],expand=True)
         page.add(flet.Column([content_pirog_4],))
         # scroll=flet.ScrollMode.AUTO
-        content_pirog_5=flet.Stack([image_side_4,form_container_20])
+        content_pirog_5=flet.Stack([image_side_4,form_container_20],expand=True)
 if __name__ == "__main__":
     flet.app(target=main,view=flet.AppView.WEB_BROWSER)
 
