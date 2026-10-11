@@ -1624,8 +1624,8 @@ async def main(page:flet.Page):
                                                  horizontal_alignment=flet.CrossAxisAlignment.CENTER
         ))
         image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=1000)
-        content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19],expand=True)
-        page.add(flet.Column([content_pirog_4],expand=True))
+        content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19])
+        page.add(flet.Column([content_pirog_4]))
         # scroll=flet.ScrollMode.AUTO
         content_pirog_5=flet.Stack([image_side_4,form_container_20],expand=True)
 if __name__ == "__main__":
