@@ -258,7 +258,7 @@ async def main(page:flet.Page):
         page.update()
     else:
         async def na_glavnuju(e):
-            await flet.UrlLauncher().launch_url("www.platoki.ee")
+            await flet.UrlLauncher().launch_url("www.platoki.ee",mode=flet.LaunchMode.EXTERNAL_APPLICATION,web_only_window_name="_blank")
         async def panel_vhoda(e):
             page.clean()
             page.add(content_pirog_4)
