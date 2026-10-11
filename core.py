@@ -1623,7 +1623,7 @@ async def main(page:flet.Page):
                                                            knopka_vhod],
                                                  horizontal_alignment=flet.CrossAxisAlignment.CENTER
         ),expand=True)
-        image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=475)
+        image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=450)
         content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19])
         page.add(flet.Column([image_side_0,knopka_oshibki_vhoda,flet.Text("Что надобно, мой Господин?",size=28,weight=flet.FontWeight.BOLD,font_family="Ponomar"),imja_polzovatelja,parol_polzovatelja, knopka_vhod]))
         # scroll=flet.ScrollMode.AUTO
