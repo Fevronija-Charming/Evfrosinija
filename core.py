@@ -1343,12 +1343,12 @@ async def main(page:flet.Page):
                                                            kolorit_5_vvod,
                                                            uzor_temeni_vvod, uzor_sedceviny_vvod, uzor_storon_vvod,
                                                            uzor_uglov_vvod, uzor_kraja_vvod,
-                                                           ], ),expand=True)
+                                                           ], scroll=flet.ScrollMode.ALWAYS))
         form_container_2 = flet.Container(width=280, height=575, top=102, left=495, content=flet.Column([
         cvety_ornament_vvod, cvetok_1_vvod, cvetok_2_vvod, cvetok_3_vvod, cvetok_4_vvod, cvetok_5_vvod,
         platok_razmer_vvod,
-        platok_material_vvod, platok_bahroma_vvod], ))
-        form_container_3 = flet.Container(width=280, height=600, top=705, left=495, content=flet.Column([otpravka_knopka], ))
+        platok_material_vvod, platok_bahroma_vvod]),scroll=flet.ScrollMode.ALWAYS)
+        form_container_3 = flet.Container(width=280, height=600, top=705, left=495, content=flet.Column([otpravka_knopka],scroll=flet.ScrollMode.ALWAYS))
         form_container_4 = flet.Container(width=280, height=50, top=45, left=495,
                                       content=flet.Column([otpravka_knopka_fail], ),expand=True)
         form_container_5 = flet.Container(width=280, height=50, top=45, left=495,
@@ -1570,13 +1570,13 @@ async def main(page:flet.Page):
         content_pirog=flet.Stack([image_side,form_container_1,form_container_2,form_container_3,
                               form_container_4,form_container_5,form_container_6,form_container_7,form_container_8,form_container_9,form_container_15
                               #uved_kont
-                              ],expand=True)
+                              ])
         content_pirog_3=flet.Stack([image_side_3,form_container_10,form_container_11,form_container_13,form_container_4,form_container_5,
                                 form_container_12,form_container_9,form_container_6,form_container_14
-                                ],expand=True)
+                                ])
         content_pirog_2 = flet.Stack([image_side_2,form_container_16,form_container_17,form_container_18,form_container_24, form_container_25,form_container_26
                                 # uved_kont
-                                ],expand=True)
+                                ])
         #content_pirog_4 = flet.Stack([form_container_14,table_container
         #                           ])
         content_pirog_9 = flet.Stack(
