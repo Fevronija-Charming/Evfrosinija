@@ -1617,15 +1617,15 @@ async def main(page:flet.Page):
     #page.add(content_pirog_3)
         imja_polzovatelja=flet.TextField(label="Имя пользователя",border_radius=10,on_blur=vhod_validator)
         parol_polzovatelja=flet.TextField(label="Пароль",password=True,can_reveal_password=True,border_radius=10,on_blur=vhod_validator)
-        form_side=flet.Container(top=500,height=600,content=flet.Column(controls=[flet.Text("Что надобно, мой Господин?",size=28,weight=flet.FontWeight.BOLD,font_family="Ponomar"),
+        form_side=flet.Container(top=600,height=600,content=flet.Column(controls=[flet.Text("Что надобно, мой Господин?",size=28,weight=flet.FontWeight.BOLD,font_family="Ponomar"),
         imja_polzovatelja,parol_polzovatelja,
         # flet.TextField(label="Э=лектронная почта",border_radius=10),
                                                            knopka_vhod],
                                                  horizontal_alignment=flet.CrossAxisAlignment.CENTER
         ))
-        image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=1000)
+        image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=2000)
         content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19],expand=True)
-        page.add(flet.Column([content_pirog_4],))
+        page.add(flet.Column([content_pirog_4],expand=True))
         # scroll=flet.ScrollMode.AUTO
         content_pirog_5=flet.Stack([image_side_4,form_container_20],expand=True)
 if __name__ == "__main__":
