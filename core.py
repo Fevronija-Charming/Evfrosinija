@@ -395,7 +395,7 @@ async def main(page:flet.Page):
             page.add(flet.Column([  # image_side,
             # data_table,
             # form_side
-            form_container11]))
+            form_container11,otpravka_knopka]))
         async def publikacija_otrisovka(e):
             page.clean()
             page.add(flet.Column([  # image_side,
