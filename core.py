@@ -106,7 +106,7 @@ from dotenv import find_dotenv, load_dotenv
 load_dotenv(find_dotenv())
 cvet_2=flet.Colors.AMBER_ACCENT
 cvet_1=flet.Colors.DEEP_ORANGE
-razmer_bukov=24
+razmer_bukov=23
 async def register_auth_fail():
     intsident_time=str(datetime.datetime.now())
     intsident_value="Evfrosinija:auth-fail:"+str(time.time())
@@ -392,7 +392,7 @@ async def main(page:flet.Page):
                                       ],expand=True)
         async def platok_otrisovka(e):
             page.clean()
-            page.add(flet.Row([  # image_side,
+            page.add(flet.Column([  # image_side,
             # data_table,
             # form_side
             form_container11],
