@@ -523,7 +523,9 @@ async def main(page:flet.Page):
             page.add(table_container)
         async def zurnalposech_otrisovka(e):
             page.clean()
-            page.add(table_container2)
+            from db_data_perfom import zurnal_pocezh
+            records2=zurnal_pocezh()
+            
         async def bazadannyh_Teh_otrisovka(e):
             # ТАБЛИЦА ПО ПЛАТКАМ:
             table_colums = [flet.DataColumn(flet.Text("Артикул")), flet.DataColumn(flet.Text("Название")),
@@ -1343,12 +1345,12 @@ async def main(page:flet.Page):
                                                            kolorit_5_vvod,
                                                            uzor_temeni_vvod, uzor_sedceviny_vvod, uzor_storon_vvod,
                                                            uzor_uglov_vvod, uzor_kraja_vvod,
-                                                           ], scroll=flet.ScrollMode.ALWAYS))
+                                                           ]))
         form_container_2 = flet.Container(width=280, height=575, top=102, left=495, content=flet.Column([
         cvety_ornament_vvod, cvetok_1_vvod, cvetok_2_vvod, cvetok_3_vvod, cvetok_4_vvod, cvetok_5_vvod,
         platok_razmer_vvod,
         platok_material_vvod, platok_bahroma_vvod]),scroll=flet.ScrollMode.ALWAYS)
-        form_container_3 = flet.Container(width=280, height=600, top=705, left=495, content=flet.Column([otpravka_knopka],scroll=flet.ScrollMode.ALWAYS))
+        form_container_3 = flet.Container(width=280, height=600, top=705, left=495, content=flet.Column([otpravka_knopka]))
         form_container_4 = flet.Container(width=280, height=50, top=45, left=495,
                                       content=flet.Column([otpravka_knopka_fail], ),expand=True)
         form_container_5 = flet.Container(width=280, height=50, top=45, left=495,
