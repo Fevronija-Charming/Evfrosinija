@@ -106,7 +106,7 @@ from dotenv import find_dotenv, load_dotenv
 load_dotenv(find_dotenv())
 cvet_2=flet.Colors.AMBER_ACCENT
 cvet_1=flet.Colors.DEEP_ORANGE
-razmer_bukov=20
+razmer_bukov=16
 async def register_auth_fail():
     intsident_time=str(datetime.datetime.now())
     intsident_value="Evfrosinija:auth-fail:"+str(time.time())
