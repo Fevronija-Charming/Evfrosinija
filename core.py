@@ -1617,7 +1617,7 @@ async def main(page:flet.Page):
     #page.add(content_pirog_3)
         imja_polzovatelja=flet.TextField(label="Имя пользователя",border_radius=10,on_blur=vhod_validator)
         parol_polzovatelja=flet.TextField(label="Пароль",password=True,can_reveal_password=True,border_radius=10,on_blur=vhod_validator)
-        form_side=flet.Container(top=575,height=200,content=flet.Column(controls=[flet.Text("Что надобно, мой Господин?",size=28,weight=flet.FontWeight.BOLD,font_family="Ponomar"),
+        form_side=flet.Container(top=575,height=400,content=flet.Column(controls=[flet.Text("Что надобно, мой Господин?",size=28,weight=flet.FontWeight.BOLD,font_family="Ponomar"),
         imja_polzovatelja,parol_polzovatelja,
         # flet.TextField(label="Э=лектронная почта",border_radius=10),
                                                            knopka_vhod],
