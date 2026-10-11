@@ -395,8 +395,8 @@ async def main(page:flet.Page):
             page.add(flet.Row([  # image_side,
             # data_table,
             # form_side
-            form_container11,form_container22,image_side],
-            # scroll=flet.ScrollMode.AUTO
+            form_container11],
+            scroll=flet.ScrollMode.ALWAYS
             ))
         async def publikacija_otrisovka(e):
             page.clean()
@@ -1341,7 +1341,9 @@ async def main(page:flet.Page):
                                                            kolorit_2_vvod, kolorit_3_vvod, kolorit_4_vvod,
                                                            kolorit_5_vvod,
                                                            uzor_temeni_vvod, uzor_sedceviny_vvod, uzor_storon_vvod,
-                                                           uzor_uglov_vvod, uzor_kraja_vvod])
+                                                           uzor_uglov_vvod, uzor_kraja_vvod,cvety_ornament_vvod, cvetok_1_vvod, cvetok_2_vvod, cvetok_3_vvod, cvetok_4_vvod, cvetok_5_vvod,
+                platok_razmer_vvod,
+                platok_material_vvod, platok_bahroma_vvod,otpravka_knopka])
         form_container22=flet.Column([cvety_ornament_vvod, cvetok_1_vvod, cvetok_2_vvod, cvetok_3_vvod, cvetok_4_vvod, cvetok_5_vvod,
                 platok_razmer_vvod,
                 platok_material_vvod, platok_bahroma_vvod,otpravka_knopka])
