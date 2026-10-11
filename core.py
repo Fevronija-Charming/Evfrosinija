@@ -1623,7 +1623,7 @@ async def main(page:flet.Page):
                                                            knopka_vhod],
                                                  horizontal_alignment=flet.CrossAxisAlignment.CENTER
         ))
-        image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=1500)
+        image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=1250)
         content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19])
         page.add(flet.Column([content_pirog_4]))
         # scroll=flet.ScrollMode.AUTO
