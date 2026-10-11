@@ -1625,7 +1625,7 @@ async def main(page:flet.Page):
         ),expand=True)
         image_side_0=flet.Image(src=f"gamajun.jpg", width=400, height=750)
         content_pirog_4=flet.Stack([image_side_0,form_side,form_container_19])
-        page.add(flet.Column([image_side,form_container_19,form_side]))
+        page.add(flet.Column([image_side_0,form_container_19,form_side]))
         # scroll=flet.ScrollMode.AUTO
         content_pirog_5=flet.Stack([image_side_4,form_container_20],expand=True)
 if __name__ == "__main__":
