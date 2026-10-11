@@ -392,10 +392,10 @@ async def main(page:flet.Page):
                                       ],expand=True)
         async def platok_otrisovka(e):
             page.clean()
-            page.add(flet.Column([  # image_side,
+            page.add(flet.Row([  # image_side,
             # data_table,
             # form_side
-            content_pirog],
+            form_container11,form_container22,image_side],
             # scroll=flet.ScrollMode.AUTO
             ))
         async def publikacija_otrisovka(e):
@@ -1334,6 +1334,17 @@ async def main(page:flet.Page):
         knopka_prozhanije_4 = flet.FilledButton("Авторизоваться снова", width=400, height=60, on_click=panel_vhoda,
                                                 disabled=False, visible=True,
                                                 style=flet.ButtonStyle(color=cvet_1, bgcolor=cvet_2))
+        form_container11=flet.Column([flet.Text("Ввести новый платок", color=cvet_1, size=28,
+                                                                     weight=flet.FontWeight.BOLD,
+                                                                     font_family="Ponomar"),
+                                                           artikul_vvod, nazvanije_vvod, avtor_vvod, kolorit_1_vvod,
+                                                           kolorit_2_vvod, kolorit_3_vvod, kolorit_4_vvod,
+                                                           kolorit_5_vvod,
+                                                           uzor_temeni_vvod, uzor_sedceviny_vvod, uzor_storon_vvod,
+                                                           uzor_uglov_vvod, uzor_kraja_vvod])
+        form_container22=flet.Column([cvety_ornament_vvod, cvetok_1_vvod, cvetok_2_vvod, cvetok_3_vvod, cvetok_4_vvod, cvetok_5_vvod,
+                platok_razmer_vvod,
+                platok_material_vvod, platok_bahroma_vvod,otpravka_knopka])
 
         form_container_1 = flet.Container(width=275, height=900, top=50, left=215,
                                       content=flet.Column([flet.Text("Ввести новый платок", color=cvet_1, size=28,
