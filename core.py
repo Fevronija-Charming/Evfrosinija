@@ -106,7 +106,7 @@ from dotenv import find_dotenv, load_dotenv
 load_dotenv(find_dotenv())
 cvet_2=flet.Colors.AMBER_ACCENT
 cvet_1=flet.Colors.DEEP_ORANGE
-razmer_bukov=16
+razmer_bukov=10
 async def register_auth_fail():
     intsident_time=str(datetime.datetime.now())
     intsident_value="Evfrosinija:auth-fail:"+str(time.time())
@@ -1332,7 +1332,7 @@ async def main(page:flet.Page):
         knopka_prozhanije_4 = flet.FilledButton("Авторизоваться снова", width=400, height=60, on_click=panel_vhoda,
                                                 disabled=False, visible=True,
                                                 style=flet.ButtonStyle(color=cvet_1, bgcolor=cvet_2))
-        form_container11=flet.Column(scroll=flet.ScrollMode.ALWAYS,height=800,controls=[flet.Text("Ввести новый платок", color=cvet_1, size=28,
+        form_container11=flet.Column(scroll=flet.ScrollMode.ALWAYS,height=100,controls=[flet.Text("Ввести новый платок", color=cvet_1, size=28,
                                                                      weight=flet.FontWeight.BOLD,
                                                                      font_family="Ponomar"),
                                                            artikul_vvod, nazvanije_vvod, avtor_vvod, kolorit_1_vvod,
